@@ -1,0 +1,360 @@
+body {
+    margin: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .head,
+  .left_arm1,
+  .left_arm2,
+  .torso,
+  .right_arm1,
+  .right_arm2,
+  .left_leg,
+  .right_leg {
+    background-color: #735fe8;
+  }
+  
+  .head {
+    width: 200px;
+    margin: 0 auto;
+    height: 150px;
+    border-radius: 100px 100px 100px 100px;
+    margin-bottom: 10px;
+  }
+  
+  .eyes {
+    position: relative;
+    top: 100px;
+  }
+  
+  .left_eye,
+  .right_eye {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.541);
+    display: inline-block;
+  }
+  
+  .left_eye {
+    margin-left: 30px;
+  }
+  
+  .right_eye {
+    margin-left: 100px;
+  }
+  
+  .upper_body {
+    width: 300px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+  }
+  
+  .left_arm1,
+  .right_arm2
+  {
+    width: 40px;
+    height: 125px;
+    border-radius: 100px;
+    margin-top: 20px;
+  }
+  .left_arm2,
+  .right_arm1{
+    width: 40px;
+    height: 125px;
+    border-radius: 100px;
+    margin-top: 70px;
+  }
+  .torso {
+    width: 200px;
+    height: 200px;
+    border-radius: 0 0 50px 50px;
+    transition: border-radius 1s;
+    z-index: 1;
+  }
+  
+  .lower_body {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  .left_leg,
+  .right_leg {
+    width: 40px;
+    height: 120px;
+    border-radius: 0 0 100px 100px;
+    display: inline-block;
+  }
+  
+  .left_leg {
+    margin-left: 45px;
+  }
+  
+  .right_leg {
+    margin-left: 30px;
+  }
+  
+  .robots:hover .head {
+    animation: movehead 2s infinite;
+  }
+  
+  .robots:hover .torso {
+    border-radius: 40%;
+    animation: movetorso 2s infinite;
+  }
+  
+  .robots:hover .left_arm1 {
+    animation: moveleft_arm1 2s infinite;
+  }
+  .robots:hover .left_arm2 {
+    animation: moveleft_arm2 2s infinite;
+  }
+  
+  .robots:hover .right_arm1 {
+    animation: moveright_arm1 2s infinite;
+  }
+  
+  .robots:hover .right_arm2 {
+    animation: moveright_arm2 2s infinite;
+  }
+  
+  .robots:hover .left_leg {
+    animation: moveleftleg 2s infinite;
+  }
+  
+  .robots:hover .right_leg {
+    animation: moverightleg 2s infinite;
+  }
+  
+  @keyframes movehead {
+    0% {
+      width: 200px;
+      transform: rotate(360deg);
+      background-color: salmon;
+    }
+  
+    25% {
+      width: 200px;
+      transform: rotate(0deg);
+      background-color: darkcyan;
+    }
+  
+    50% {
+      width: 200px;
+      transform: rotate(360deg);
+      background-color: salmon;
+    }
+  
+    75% {
+      width: 200px;
+      transform: rotate(0deg);
+      background-color: darkcyan;
+    }
+  
+    100% {
+      width: 200px;
+      transform: rotate(360deg);
+      background-color: salmon;
+    }
+  }
+  
+  @keyframes moveleft_arm1 {
+    0% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+      background-color: orangered;
+
+    }
+  
+    25% {
+      transform: rotate(360deg);
+      transform-origin: top center;
+      background-color: violet;
+    }
+  
+    50% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+      background-color: orangered;
+    }
+  
+    75% {
+      transform: rotate(360deg);
+      transform-origin: top center;
+      background-color: violet ;
+    }
+  
+    100% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+      background-color: orangered;
+    }
+  }
+  
+  @keyframes moveleft_arm2 {
+    0% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+      background-color: darkgreen;
+    }
+  
+    25% {
+      transform: rotate(360deg);
+      transform-origin: top center;
+      background-color: aquamarine;
+    }
+  
+    50% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+      background-color: darkgreen;
+    }
+  
+    75% {
+      transform: rotate(360deg);
+      transform-origin: top center;
+      background-color: aquamarine;
+    }
+  
+    100% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+      background-color: darkgreen;
+    }
+  }
+  @keyframes moveright_arm1 {
+    0% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+      background-color: orangered;
+    }
+  
+    25% {
+      transform: rotate(-360deg);
+      transform-origin: top center;
+      background-color: violet;
+    }
+  
+    50% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+      background-color: orangered;
+    }
+  
+    75% {
+      transform: rotate(-360deg);
+      transform-origin: top center;
+      background-color: violet;
+    }
+  
+    100% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+      background-color: orangered;
+    }
+  }
+  @keyframes moveright_arm2 {
+    0% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+      background-color: darkgreen;
+    }
+  
+    25% {
+      transform: rotate(-360deg);
+      transform-origin: top center;
+      background-color: aquamarine;
+    
+    }
+  
+    50% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+      background-color: darkgreen;
+    }
+  
+    75% {
+      transform: rotate(-360deg);
+      transform-origin: top center;
+      background-color: aquamarine;
+    }
+  
+    100% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+      background-color: darkgreen;
+    }
+  }
+  
+  @keyframes moveleftleg {
+    0% {
+      transform: rotate(0deg);
+      background-color: red;
+    }
+  
+    25% {
+      transform: rotate(-180deg);
+      background-color: gray;
+    }
+  
+    50% {
+      transform: rotate(0deg);
+      background-color: red;
+    }
+  
+    75% {
+      transform: rotate(-180deg);
+      background-color: grey;
+    }
+  
+    100% {
+      transform: rotate(0deg);
+      background-color: red;
+    }
+  }
+  
+  @keyframes moverightleg {
+    0% {
+      transform: rotate(0deg);
+      background-color: yellow;
+    }
+  
+    25% {
+      transform: rotate(180deg);
+      background-color: brown;
+    }
+  
+    50% {
+      transform: rotate(0deg);
+      background-color: yellow;
+    }
+  
+    75% {
+      transform: rotate(180deg);
+      background-color: brown;
+    }
+  
+    100% {
+      transform: rotate(0deg);
+      background-color: yellow;
+    }
+  }
+  
+  @keyframes movetorso {
+    from {
+      transform: rotate(0deg);
+      background-color: skyblue;
+    }
+  
+    to {
+      transform: rotate(360deg);
+      background-color: darkgrey;
+    }
+  }
+  
